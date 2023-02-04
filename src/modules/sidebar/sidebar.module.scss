@@ -1,0 +1,68 @@
+.balloon {
+    position: absolute;
+    top: 0;
+    padding: 15px 20px;
+    width: 350px;
+    background: white;
+    box-shadow: 0 4px 15px -5px rgba(0, 0, 0, .2);
+    box-sizing: border-box;
+    z-index: 1;
+    right: 0;
+}
+.balloon a {
+    font-size: 14px;
+    color: black;
+    text-decoration: underline;
+}
+
+h4 {
+    margin-top: 30px;
+}
+
+.close {
+    float: right;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    display: inline-block;
+    background: none;
+}
+.close img {
+    width: 15px;
+    height: 15px;
+}
+
+.balloon-info p {
+    font-size: 14px;
+}
+
+.infoTop {
+    font-weight: bold;
+    font-size: 14px;
+    text-decoration: underline;
+}
+
+.balloon-time {
+    margin-bottom: 20px;
+  &--text {
+    font-size: 14px;
+    p {
+      margin: 7px 0;
+    }
+  }
+}
+
+.image {
+    margin: 10px 0;
+    width: 150px;
+  img {
+    display: inline-block;
+    width: 100%;
+  }
+}
+
+@media (max-width: 768px) {
+    .balloon {
+        height: 100%;
+    }
+}
