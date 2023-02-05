@@ -61,7 +61,7 @@ module.exports = (env, argv) => {
         },
         output: {
             filename: watchMode ? 'assets/[name].[hash].js' : 'assets/[name].[chunkhash].js',
-            path: path.resolve(__dirname, 'dist'),
+            path: path.resolve(__dirname, 'build'),
             publicPath: '/',
         },
         performance: {

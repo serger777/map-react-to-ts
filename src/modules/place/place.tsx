@@ -17,8 +17,8 @@ export const Place = React.memo(() => {
   return <div className={styles.list}>
         { place.map((item, idx) => (
             <div className={styles.item} >
-                <input onChange={setPlace} type="radio" id={idx} name='place' value={item}/>
-                <label  className={currentPlace == item ? styles.active : '' }  htmlFor={idx}>
+                <input onChange={setPlace} type="radio" id={item} name='place' value={item}/>
+                <label  className={currentPlace == item ? styles.active : '' }  htmlFor={item}>
                     {item === '' ? 'Все' : item}
                 </label>
             </div>

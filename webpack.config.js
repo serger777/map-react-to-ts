@@ -39,7 +39,7 @@ module.exports = (env) => {
     }
 
     if (env === 'production') {
-        modules.stylus.use.splice(2, 0, { loader: "postcss-loader" })
+        modules.css.use.splice(2, 0, { loader: "postcss-loader" })
     }
 
     const resolve = {
