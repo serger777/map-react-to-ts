@@ -1,0 +1,23 @@
+name: Test
+on: push
+  jobs:
+    lint:
+      runs-on: ubuntu-latest
+      steps:
+        - name: Get repo code
+          #run: echo
+          uses: actions/checkout@v3
+        - name: Install
+          run: npm ci
+        - name: Lint
+          run: npm run lint
+    Build:
+      runs-on: ubuntu-latest
+      steps:
+        - name: Get repo code
+          #run: echo
+          uses: actions/checkout@v3
+        - name: Install
+          run: npm ci
+        - name: Build
+          run: npm run build
