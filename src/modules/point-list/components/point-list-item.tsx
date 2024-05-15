@@ -15,7 +15,7 @@ export const PointListItem = React.memo<TPointListItem>(({ isViewDate }) => {
   const selectedId  = useSelector(getSelectedId);
   const setId = React.useCallback((id: string) => {
     dispatch(setSelectedId(id));
-    dispatch(selectedPointsAction(id));
+    dispatch<any>(selectedPointsAction(id));
   }, [selectedPointsAction]);
 
   return <div className={styles.list}>

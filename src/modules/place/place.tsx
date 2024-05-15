@@ -15,13 +15,13 @@ export const Place = React.memo(() => {
   }, [dispatch, setCurrentPlace]);
 
   return <div className={styles.list}>
-        { place.map((item, idx) => (
-            <div className={styles.item} >
+        {place.map((item) => (
+            <span className={styles.item} key={item}>
                 <input onChange={setPlace} type="radio" id={item} name='place' value={item}/>
                 <label  className={currentPlace == item ? styles.active : '' }  htmlFor={item}>
-                    {item === '' ? 'Все' : item}
+                    {item}
                 </label>
-            </div>
+            </span>
         ))}
     </div>;
 });

@@ -1,0 +1,26 @@
+$FONT: "Geometria";
+/// Breackpoint
+$xs: 450px;
+/// Breackpoint
+$sm: 768px;
+/// Breackpoint
+$md: 990px;
+/// Breackpoint
+$lg: 1100px;
+$blue: #2084c5;
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  margin-right: auto;
+  margin-left: auto;
+  box-sizing: border-box;
+  padding-left: 5px;
+  padding-right: 5px;
+  flex-direction: column;
+}
+
+.title {
+  text-align: center;
+  display: inline-block;
+  width: 100%;
+}

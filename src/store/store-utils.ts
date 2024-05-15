@@ -6,5 +6,5 @@ export const mapPlace = (data: TData[]): string[] => {
       acc.push(place);
     }
     return acc;
-  }, []).concat(['']);
+  }, []).concat(['Все']);
 };

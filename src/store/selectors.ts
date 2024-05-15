@@ -32,7 +32,7 @@ export const getFilterData = createSelector(
   (
     data: TData[],
     currentPlace: string,
-  ): TData[] =>  data.filter(item => !currentPlace || item.place === currentPlace),
+  ): TData[] =>  data.filter(item => currentPlace === 'Все' || item.place === currentPlace),
 );
 
 export const getIsOpenSidebar = (state: TRootState): boolean => state.dataMap.isOpenSidebar;

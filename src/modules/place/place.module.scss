@@ -3,6 +3,10 @@
   flex-flow: row wrap;
   input {
     display: none;
+    caret-color: transparent;
+  }
+  span {
+    caret-color: transparent;
   }
 }
 .item {

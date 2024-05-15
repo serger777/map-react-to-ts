@@ -180,7 +180,7 @@ export const setMapBounds = () => {
 export const filterYaMap = (place: string) => {
   //@ts-ignore
   window.myCollection.setFilter(shopObject => {
-    if (place === '') {
+    if (place === 'Все') {
       return shopObject.type === 'Feature';
     } else {
       return shopObject.place === place;
